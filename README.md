@@ -1,7 +1,7 @@
-## A Debian Buster with x-server, Fluxbox DE and vnc-server
+## A Debian Buster Docker Image with x-server, Fluxbox DE and vnc-server
 
 
-#### Build From Dockerfile and Run from locally build
+#### Build Image From Dockerfile and Run from locally build
 ```
 git clone https://github.com/corasaniti/debian-buster-vnc.git
 cd debian-buster-vnc
@@ -9,7 +9,7 @@ docker build -t debian-buster-vnc .
 docker run -d -p 5900:5900 -e "VNC_PASSWORD=choose-password" debian-buster-vnc
 ```
 
-#### Alternatively Run Container from Docker Registry
+#### Alternatively Pull and Run Container from Docker Registry
 ``` 
 docker run -d -p 5900:5900 \
            --name buster-vnc \
