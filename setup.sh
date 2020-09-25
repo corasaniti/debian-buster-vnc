@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# Start vfb
 # Start vnc
-
 if [ -z "$VNC_PASSWORD" ]
 then
     echo '[-] Please choose a password with VNC_PASSWORD parameter'
